@@ -62,10 +62,12 @@ function chk(){
        
     var selval = document.querySelector('input[name="opt"]:checked');
     if(myNam[selval.value] == document.getElementById("para").innerText){
-        score()
+        score();
+        disable()
     }
     else {
-        negative()
+        negative();
+        disable();
     }
 
 }
@@ -93,6 +95,12 @@ function negative() {
   } else {
     document.getElementById("score").innerText = "Sorry, your browser does not support web storage...";
   }
+}
+function disable(){
+     document.getElementById("o1").disabled = "true";
+     document.getElementById("o2").disabled = "true";
+     document.getElementById("o3").disabled = "true";
+     document.getElementById("o4").disabled = "true";
 }
 </script>
 </html>
