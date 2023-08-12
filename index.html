@@ -62,12 +62,28 @@ function chk(){
     if(myNam[selval.value] == document.getElementById("para").innerText){
         score()
     }
+    else {
+        negative()
+    }
 
 }
 function score() {
   if (typeof(Storage) !== "undefined") {
     if (localStorage.clickcount) {
       localStorage.clickcount = Number(localStorage.clickcount)+1;
+    } else {
+      localStorage.clickcount = 1;
+    }
+    document.getElementById("score").innerText = "Your Score " + localStorage.clickcount;
+  } else {
+    document.getElementById("score").innerText = "Sorry, your browser does not support web storage...";
+  }
+}
+
+function negative() {
+  if (typeof(Storage) !== "undefined") {
+    if (localStorage.clickcount) {
+      localStorage.clickcount = Number(localStorage.clickcount)-2;
     } else {
       localStorage.clickcount = 1;
     }
