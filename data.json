@@ -1,0 +1,379 @@
+[
+    {
+      "name": "Adrien Brody",
+      "image": "adrien-brody.jpg"
+    },
+    {
+      "name": "Britt Robertson",
+      "image": "britt-robertson.jpg"
+    },
+    {
+      "name": "Ellen Page",
+      "image": "ellen-page.jpg"
+    },
+    {
+      "name": "Gemma Arterton",
+      "image": "gemma-arterton.jpg"
+    },
+    {
+      "name": "Jessica Alba",
+      "image": "jessica-alba.jpg"
+    },
+    {
+      "name": "Margot Robbie",
+      "image": "margot-robbie.jpg"
+    },
+    {
+      "name": "Olga Kurylenko",
+      "image": "olga-kurylenko.jpg"
+    },
+    {
+      "name": "Selena Gomez",
+      "image": "selena-gomez.jpg"
+    },
+    {
+      "name": "Alexa Davalos",
+      "image": "alexa-davalos.jpg"
+    },
+    {
+      "name": "Camilla Belle",
+      "image": "camilla-belle.jpg"
+    },
+    {
+      "name": "Ellen Pompeo",
+      "image": "ellen-pompeo.jpg"
+    },
+    {
+      "name": "Hailee Steinfeld",
+      "image": "hailee-steinfeld.jpg"
+    },
+    {
+      "name": "Jessica Biel",
+      "image": "jessica-biel.jpg"
+    },
+    {
+      "name": "Mary Elizabeth Winstead",
+      "image": "mary-elizabeth-winstead.jpg"
+    },
+    {
+      "name": "Olivia Munn",
+      "image": "olivia-munn.jpg"
+    },
+    {
+      "name": "Sienna Miller",
+      "image": "sienna-miller.jpg"
+    },
+    {
+      "name": "Alexandra Daddario",
+      "image": "alexandra-daddario.jpg"
+    },
+    {
+      "name": "Chloe Grace Moretz",
+      "image": "chloe-grace-moretz.jpg"
+    },
+    {
+      "name": "Emilia Clarke",
+      "image": "emilia-clarke.jpg"
+    },
+    {
+      "name": "Haley Bennett",
+      "image": "haley-bennett.jpg"
+    },
+    {
+      "name": "Johnny Depp",
+      "image": "johnny-depp.jpg"
+    },
+    {
+      "name": "Matt Damon",
+      "image": "matt-damon.jpg"
+    },
+    {
+      "name": "Paula Patton",
+      "image": "paula-patton.jpg"
+    },
+    {
+      "name": "Summer Glau",
+      "image": "summer-glau.jpg"
+    },
+    {
+      "name": "Alicia Vikander",
+      "image": "alicia-vikander.jpg"
+    },
+    {
+      "name": "Chris Evans",
+      "image": "chris-evans.jpg"
+    },
+    {
+      "name": "Emily Blunt",
+      "image": "emily-blunt.jpg"
+    },
+    {
+      "name": "Henry Cavill",
+      "image": "henry-cavill.jpg"
+    },
+    {
+      "name": "Jordana Brewster",
+      "image": "jordana-brewster.jpg"
+    },
+    {
+      "name": "Matthew McConaughey",
+      "image": "matthew-mcconaughey.jpg"
+    },
+    {
+      "name": "Paul Rudd",
+      "image": "paul-rudd.jpg"
+    },
+    {
+      "name": "Teresa Palmer",
+      "image": "teresa-palmer.jpg"
+    },
+    {
+      "name": "Amber Heard",
+      "image": "amber-heard.jpg"
+    },
+    {
+      "name": "Chris Hemsworth",
+      "image": "chris-hemsworth.jpg"
+    },
+    {
+      "name": "Emily Ratajkowski",
+      "image": "emily-ratajkowski.jpg"
+    },
+    {
+      "name": "Hugh Jackman",
+      "image": "hugh-jackman.jpg"
+    },
+    {
+      "name": "Joseph Gordon-Levitt",
+      "image": "joseph-gordon-levitt.jpg"
+    },
+    {
+      "name": "Megan Fox",
+      "image": "megan-fox.jpg"
+    },
+    {
+      "name": "Peter Dinklage",
+      "image": "peter-dinklage.jpg"
+    },
+    {
+      "name": "Tom Cruise",
+      "image": "tom-cruise.jpg"
+    },
+    {
+      "name": "Ana de Armas",
+      "image": "ana-de-armas.jpg"
+    },
+    {
+      "name": "Chris Pratt",
+      "image": "chris-pratt.jpg"
+    },
+    {
+      "name": "Emily VanCamp",
+      "image": "emily-vancamp.jpg"
+    },
+    {
+      "name": "Kaya Scodelario",
+      "image": "kaya-scodelario.jpg"
+    },
+    {
+      "name": "Michael Fassbender",
+      "image": "michael-fassbender.jpg"
+    },
+    {
+      "name": "Rachel McAdams",
+      "image": "rachel-mcadams.jpg"
+    },
+    {
+      "name": "Tom Hardy",
+      "image": "tom-hardy.jpg"
+    },
+    {
+      "name": "Andrew Garfield",
+      "image": "andrew-garfield.jpg"
+    },
+    {
+      "name": "Christian Bale",
+      "image": "christian-bale.jpg"
+    },
+    {
+      "name": "Emma Stone",
+      "image": "emma-stone.jpg"
+    },
+    {
+      "name": "Jaimie Alexander",
+      "image": "jaimie-alexander.jpg"
+    },
+    {
+      "name": "Keanu Reeves",
+      "image": "keanu-reeves.jpg"
+    },
+    {
+      "name": "Michelle Monaghan",
+      "image": "michelle-monaghan.jpg"
+    },
+    {
+      "name": "Rebecca Ferguson",
+      "image": "rebecca-ferguson.jpg"
+    },
+    {
+      "name": "Tom Hiddleston",
+      "image": "tom-hiddleston.jpg"
+    },
+    {
+      "name": "Angelina Jolie",
+      "image": "angelina-jolie.jpg"
+    },
+    {
+      "name": "Dakota Fanning",
+      "image": "dakota-fanning.jpg"
+    },
+    {
+      "name": "Emma Watson",
+      "image": "emma-watson.jpg"
+    },
+    {
+      "name": "Jake Gyllenhaal",
+      "image": "jake-gyllenhaal.jpg"
+    },
+    {
+      "name": "Kristen Stewart",
+      "image": "kristen-stewart.jpg"
+    },
+    {
+      "name": "Michelle Rodriguez",
+      "image": "michelle-rodriguez.jpg"
+    },
+    {
+      "name": "Rebecca Hall",
+      "image": "rebecca-hall.jpg"
+    },
+    {
+      "name": "Victoria Justice",
+      "image": "victoria-justice.jpg"
+    },
+    {
+      "name": "Anne Hathaway",
+      "image": "anne-hathaway.jpg"
+    },
+    {
+      "name": "Dakota Johnson",
+      "image": "dakota-johnson.jpg"
+    },
+    {
+      "name": "Emmy Rossum",
+      "image": "emmy-rossum.jpg"
+    },
+    {
+      "name": "James Franco",
+      "image": "james-franco.jpg"
+    },
+    {
+      "name": "Lea Seydoux",
+      "image": "lea-seydoux.jpg"
+    },
+    {
+      "name": "Mila Kunis",
+      "image": "mila-kunis.jpg"
+    },
+    {
+      "name": "Robert Downey Jr",
+      "image": "Robert-Downey-Jr.jpg"
+    },
+    {
+      "name": "Vin Diesel",
+      "image": "vin-diesel.jpg"
+    },
+    {
+      "name": "Ben Affleck",
+      "image": "ben-affleck.jpg"
+    },
+    {
+      "name": "Benedict Cumberbatch",
+      "image": "benedict-cumberbatch.jpg"
+    },
+    {
+      "name": "Elisabeth Moss",
+      "image": "elisabeth-moss.jpg"
+    },
+    {
+      "name": "Eva Green",
+      "image": "eva-green.jpg"
+    },
+    {
+      "name": "Jennifer Lawrence",
+      "image": "jennifer-lawrence.jpg"
+    },
+    {
+      "name": "Liam Hemsworth",
+      "image": "liam-hemsworth.jpg"
+    },
+    {
+      "name": "Natalie Portman",
+      "image": "natalie-portman.jpg"
+    },
+    {
+      "name": "Ryan Gosling",
+      "image": "ryan-gosling.jpg"
+    },
+    {
+      "name": "Ryan Reynolds",
+      "image": "ryan-reynolds.jpg"
+    },
+    {
+      "name": "Blake Lively",
+      "image": "blake-lively.jpg"
+    },
+    {
+      "name": "Elisha Cuthbert",
+      "image": "elisha-cuthbert.jpg"
+    },
+    {
+      "name": "Felicity Jones",
+      "image": "felicity-jones.jpg"
+    },
+    {
+      "name": "Jeremy Renner",
+      "image": "jeremy-renner.jpg"
+    },
+    {
+      "name": "Lily Collins",
+      "image": "lily-collins.jpg"
+    },
+    {
+      "name": "Nicholas Hoult",
+      "image": "nicholas-hoult.jpg"
+    },
+    {
+      "name": "Sandra Bullock",
+      "image": "sandra-bullock.jpg"
+    },
+    {
+      "name": "Brie Larson",
+      "image": "brie-larson.jpg"
+    },
+    {
+      "name": "Elle Fanning",
+      "image": "elle-fanning.jpg"
+    },
+    {
+      "name": "Gal Gadot",
+      "image": "gal-gadot.jpg"
+    },
+    {
+      "name": "Jesse Eisenberg",
+      "image": "jesse-eisenberg.jpg"
+    },
+    {
+      "name": "Logan Lerman",
+      "image": "logan-lerman.jpg"
+    },
+    {
+      "name": "Odeya Rush",
+      "image": "odeya-rush.jpg"
+    },
+    {
+      "name": "Scarlett Johansson",
+      "image": "scarlett-johansson.jpg"
+    }
+  ]
+  

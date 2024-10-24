@@ -1,106 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hollywood Stars Quiz</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <div align="center">
-    <br>
-    <h3>Star Quiz</h3>
-    <br>
-    <i id="score">Your Score 0</i>
-    <br><br>
-    <img id="pic" src="" height="200px" width="200px">
-    <p id="para" hidden></p>
-    <br>
-    <b id="o1"></b><input type="radio" name="opt" onclick="chk()" value="0"><br>
-    <b id="o2"></b><input type="radio" name="opt" onclick="chk()" value="1"><br>
-    <b id="o3"></b><input type="radio" name="opt" onclick="chk()" value="2"><br>
-    <b id="o4"></b><input type="radio" name="opt" onclick="chk()" value="3"><br>
-    <br>
-    <button onclick="window.location.reload()">Next</button>
-    <br><br>
-        <p>Correct Answer will give you 1 point and wrong answer will deduct 2 points</p>
+
+    <div class="container d-flex justify-content-center align-items-center min-vh-100">
+        <!-- Quiz Box Container -->
+        <div class="quiz-box p-4 text-center shadow-lg rounded">
+            <h3 class="fw-bold text-primary">Hollywood Stars Quiz</h3>
+            <p id="score" class="fs-5 text-secondary mb-4">Your Score: 0</p>
+            <img id="pic" src="" class="img-fluid mb-3 rounded shadow-sm" alt="Celebrity Image">
+            
+            <div class="options-container d-grid gap-3 text-start mb-4">
+                <div class="option-card p-3 rounded border" id="opt1" data-value="0"></div>
+                <div class="option-card p-3 rounded border" id="opt2" data-value="1"></div>
+                <div class="option-card p-3 rounded border" id="opt3" data-value="2"></div>
+                <div class="option-card p-3 rounded border" id="opt4" data-value="3"></div>
+            </div>
+            
+            <div class="d-flex justify-content-around">
+                <button id="nextBtn" class="btn btn-primary px-4">Next</button>
+                <button id="restartBtn" class="btn btn-danger px-4">Restart</button>
+            </div>
+            
+            <p class="mt-4 text-muted">Correct answer gives 1 point, wrong answer deducts 2 points</p>
+        </div>
     </div>
 
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="quiz.js"></script>
 </body>
-<script>
 
- window.onload = choosePic;
-
-var Pix = new Array('vin-diesel.jpg', 'will-smith.jpg', 'Robert-Downey-Jr.jpg', 'leonardo-dicaprio.jpg', 'chris-hemsworth.jpg', 'ryan-reynolds.jpg', 'chris-pratt.jpg', 'hugh-jackman.jpg', 'henry-cavill.jpg', 'chris-evans.jpg', 'johnny-depp.jpg', 'tom-hardy.jpg', 'tom-cruise.jpg', 'matthew-mcconaughey.jpg', 'ben-affleck.jpg', 'christian-bale.jpg', 'ryan-gosling.jpg', 'benedict-cumberbatch.jpg', 'matt-damon.jpg', 'jake-gyllenhaal.jpg', 'logan-lerman.jpg', 'nicholas-hoult.jpg', 'michael-fassbender.jpg', 'liam-hemsworth.jpg', 'andrew-garfield.jpg', 'joseph-gordon-levitt.jpg', 'james-mcavoy.jpg', 'jesse-eisenberg.jpg', 'james-franco.jpg', 'jeremy-renner.jpg', 'edward-norton.jpg', 'eric-bana.jpg', 'adrien-brody.jpg', 'tom-hiddleston.jpg', 'morgan-freeman.jpg', 'keanu-reeves.jpg', 'paul-rudd.jpg', 'peter-dinklage.jpg', 'scarlett-johansson.jpg', 'jennifer-lawrence.jpg', 'emma-watson.jpg', 'anne-hathaway.jpg', 'natalie-portman.jpg', 'emma-stone.jpg', 'gal-gadot.jpg', 'alexandra-daddario.jpg', 'margot-robbie.jpg', 'megan-fox.jpg', 'emily-blunt.jpg', 'angelina-jolie.jpg', 'jessica-alba.jpg', 'kristen-stewart.jpg', 'brie-larson.jpg', 'lea-seydoux.jpg', 'rachel-mcadams.jpg', 'ellen-pompeo.jpg', 'mila-kunis.jpg', 'paula-patton.jpg', 'eva-green.jpg', 'chloe-grace-moretz.jpg', 'zendaya.jpg', 'mary-elizabeth-winstead.jpg', 'hailee-steinfeld.jpg', 'elisabeth-moss.jpg', 'haley-bennett.jpg', 'olga-kurylenko.jpg', 'rebecca-ferguson.jpg', 'alicia-vikander.jpg', 'michelle-monaghan.jpg', 'emmy-rossum.jpg', 'britt-robertson.jpg', 'jessica-biel.jpg', 'sienna-miller.jpg', 'amber-heard.jpg', 'teresa-palmer.jpg', 'olivia-munn.jpg', 'camilla-belle.jpg', 'alexa-davalos.jpg', 'gemma-arterton.jpg', 'odeya-rush.jpg', 'elisha-cuthbert.jpg', 'sandra-bullock.jpg', 'blake-lively.jpg', 'ellen-page.jpg', 'elle-fanning.jpg', 'emilia-clarke.jpg', 'rebecca-hall.jpg', 'ana-de-armas.jpg', 'zoey-deutch.jpg', 'jaimie-alexander.jpg', 'jordana-brewster.jpg', 'felicity-jones.jpg', 'kaya-scodelario.jpg', 'dakota-fanning.jpg', 'summer-glau.jpg', 'lily-collins.jpg', 'zoe-saldana.jpg', 'dakota-johnson.jpg', 'selena-gomez.jpg', 'michelle-rodriguez.jpg', 'emily-vancamp.jpg', 'emily-ratajkowski.jpg', 'victoria-justice.jpg', 'zoe-kravitz.jpg');
-  
-var Nam = new Array('Vin diesel', 'Will smith', 'Robert downey jr', 'Leonardo dicaprio', 'Chris hemsworth', 'Ryan reynolds', 'Chris pratt', 'Hugh jackman', 'Henry cavill', 'Chris evans', 'Johnny depp', 'Tom hardy', 'Tom cruise', 'Matthew mcconaughey', 'Ben affleck', 'Christian bale', 'Ryan gosling', 'Benedict cumberbatch', 'Matt damon', 'Jake gyllenhaal', 'Logan lerman', 'Nicholas hoult', 'Michael fassbender', 'Liam hemsworth', 'Andrew garfield', 'Joseph gordon levitt', 'James mcavoy', 'Jesse eisenberg', 'James franco', 'Jeremy renner', 'Edward norton', 'Eric bana', 'Adrien brody', 'Tom hiddleston', 'Morgan freeman', 'Keanu reeves', 'Paul rudd', 'Peter dinklage', 'Scarlett johansson', 'Jennifer lawrence', 'Emma watson', 'Anne hathaway', 'Natalie portman', 'Emma stone', 'Gal gadot', 'Alexandra daddario', 'Margot robbie', 'Megan fox', 'Emily blunt', 'Angelina jolie', 'Jessica alba', 'Kristen stewart', 'Brie larson', 'Lea seydoux', 'Rachel mcadams', 'Ellen pompeo', 'Mila kunis', 'Paula patton', 'Eva green', 'Chloe grace moretz', 'Zendaya', 'Mary elizabeth winstead', 'Hailee steinfeld', 'Elisabeth moss', 'Haley bennett', 'Olga kurylenko', 'Rebecca ferguson', 'Alicia vikander', 'Michelle monaghan', 'Emmy rossum', 'Britt robertson', 'Jessica biel', 'Sienna miller', 'Amber heard', 'Teresa palmer', 'Olivia munn', 'Camilla belle', 'Alexa davalos', 'Gemma arterton', 'Odeya rush', 'Elisha cuthbert', 'Sandra bullock', 'Blake lively', 'Ellen page', 'Elle fanning', 'Emilia clarke', 'Rebecca hall', 'Ana de armas', 'Zoey deutch', 'Jaimie alexander', 'Jordana brewster', 'Felicity jones', 'Kaya scodelario', 'Dakota fanning', 'Summer glau', 'Lily collins', 'Zoe saldana', 'Dakota johnson', 'Selena gomez', 'Michelle rodriguez', 'Emily vancamp', 'Emily ratajkowski', 'Victoria justice', 'Zoe kravitz');
-
-var lt = Nam.length - 3;
-var rn = Math.floor(Math.random() * lt);
-var myNam = Nam.splice(rn,4);
-var myPix = Pix.splice(rn, 4);
-
-if (typeof(Storage) !== "undefined") {
-
-    document.getElementById("score").innerText = "Your Score " + localStorage.clickcount;
-  } else {
-    document.getElementById("score").innerText = "Sorry, your browser does not support web storage...";
-  }
-
-function choosePic() {
-     var randomNum = Math.floor(Math.random() * myPix.length);
-     document.getElementById("pic").src = './images/'+myPix[randomNum];
-     document.getElementById("para").innerText = myNam[randomNum];
-     document.getElementById("o1").innerText = myNam[0];
-     document.getElementById("o2").innerText = myNam[1];
-     document.getElementById("o3").innerText = myNam[2];
-     document.getElementById("o4").innerText = myNam[3];
- 
-     
-}
-function chk(){
-       
-    var selval = document.querySelector('input[name="opt"]:checked');
-    if(myNam[selval.value] == document.getElementById("para").innerText){
-        score();
-        disable()
-    }
-    else {
-        negative();
-        disable();
-    }
-
-}
-function score() {
-  if (typeof(Storage) !== "undefined") {
-    if (localStorage.clickcount) {
-      localStorage.clickcount = Number(localStorage.clickcount)+1;
-    } else {
-      localStorage.clickcount = 1;
-    }
-    document.getElementById("score").innerText = "Your Score " + localStorage.clickcount;
-  } else {
-    document.getElementById("score").innerText = "Sorry, your browser does not support web storage...";
-  }
-}
-
-function negative() {
-  if (typeof(Storage) !== "undefined") {
-    if (localStorage.clickcount) {
-      localStorage.clickcount = Number(localStorage.clickcount)-2;
-    } else {
-      localStorage.clickcount = 1;
-    }
-    document.getElementById("score").innerText = "Your Score " + localStorage.clickcount;
-  } else {
-    document.getElementById("score").innerText = "Sorry, your browser does not support web storage...";
-  }
-}
-function disable(){
-     document.getElementById("o1").disabled = "true";
-     document.getElementById("o2").disabled = "true";
-     document.getElementById("o3").disabled = "true";
-     document.getElementById("o4").disabled = "true";
-}
-</script>
 </html>

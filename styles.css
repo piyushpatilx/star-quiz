@@ -1,0 +1,82 @@
+/* General body style */
+body {
+    background-color: #f8f9fa;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Centering the quiz box and adding shadow and responsiveness */
+.quiz-box {
+    max-width: 400px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s;
+}
+
+/* Subtle hover pop effect */
+.quiz-box:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Option card styling */
+.option-card {
+    background-color: #e9ecef;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Hover effect on options */
+.option-card:hover {
+    background-color: #dee2e6;
+    transform: translateY(-2px);
+}
+
+/* Selected option */
+.option-card.selected {
+    background-color: #0d6efd;
+    color: white;
+    border: 2px solid #0a58ca;
+}
+
+/* Correct and wrong feedback styles */
+.option-card.correct {
+    background-color: #28a745 !important;
+    color: white;
+    border: 2px solid #218838;
+}
+
+.option-card.wrong {
+    background-color: #dc3545 !important;
+    color: white;
+    border: 2px solid #c82333;
+}
+
+/* Image styling */
+img#pic {
+    max-height: 250px;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+/* Custom button styling */
+button {
+    border-radius: 30px;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    transform: translateY(-2px);
+}
+
+/* Ensuring mobile-friendly width */
+@media (max-width: 768px) {
+    .quiz-box {
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    .option-card {
+        padding: 15px;
+    }
+}
